@@ -23,7 +23,7 @@ However, each driver exhibits a unique profile, not to mention that the same dri
 3 - Clone this repository
 
 ```bash
-git clone https://github.com/conect2ai/freematics-autcloud.git
+git clone https://github.com/conect2ai/EAIS2024-Autocloud.git
 ```
 
 4 - Open `freematics-autcloud/firmware_v5/telelogger` project folder in PlatformIO, as shown in the figure below.
