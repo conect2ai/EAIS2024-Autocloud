@@ -1,0 +1,5 @@
+numpy==1.24.4
+pandas==1.4.0
+matplotlib==3.7.1
+seaborn==0.13.1
+folium==0.14.0
