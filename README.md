@@ -188,12 +188,12 @@ On the other hand, for the second driver, the notable distance of Cluster 1 in c
 
 Additionally, several cluster quality metrics were evaluated, providing insights into the effectiveness of the clustering process.
 
-| Metric                  | Driver 1 |     |     | Driver 2 |     |
-|-------------------------|----------|-----|-----|----------|-----|
-| Silhouette Score        | 0.0137   |     |     | 0.1550   |     |
-| Davies-Bouldin Score    | 35.3533  |     |     | 9.2052   |     |
-| Calinski-Harabasz Score | 22.9093  |     |     | 13.6478  |     |
-| Dunn Index              | 0.0000   |     |     | 0.0002   |     |
+| Metric                  | Driver 1 | Driver 2 |
+|-------------------------|----------|----------|
+| Silhouette Score        | 0.0137   | 0.1550   |
+| Davies-Bouldin Score    | 35.3533  | 9.2052   |
+| Calinski-Harabasz Score | 22.9093  | 13.6478  |
+| Dunn Index              | 0.0000   | 0.0002   |
 
 
 ## :page_facing_up: License
