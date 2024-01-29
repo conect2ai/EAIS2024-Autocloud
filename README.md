@@ -144,6 +144,58 @@ All the information collected can be send to a server and can be stored locally 
 #define WIFI_AP_PASSWORD "PASSWORD"
 ```
 
+# :bar_chart: Graph Analysis
+
+This section contains the graphs generated from the trips made by executing the code in this repository. The code that generated these graphs can be found in the [notebook.ipynb](./notebook.ipynb) file.
+
+## Folium
+
+### 2012 Honda Fit
+
+The initial trip involved a 2012 Honda Fit 1.6L with manual transmission in Natal, Rio Grande do Norte, Brazil. The driver began cautiously (blue points), shifted to a normal pattern (green points), and later drove more aggressively, noticeable by red points indicating higher engine load due to prolonged gear stretching. The algorithm accurately detected behavior changes, highlighted by green points amid red segments, often attributed to speed bumps and pedestrian crosswalks.
+
+<p align="center">
+  <img width="800" src="./figures/fit_route.png" />
+</p> 
+
+### 2014 Ford Fiesta
+
+The second trip involved a 2014 Ford Fiesta 1.6L with automatic transmission in Natal, Rio Grande do Norte, Brazil. The driver exhibited cautious and normal driving for the most part. Occasionally, they accelerated abruptly to evaluate the algorithm's performance in limited aggressive data scenarios. The algorithm successfully captured changes in limited aggressive data and detected transitions between normal and cautious driving in segments, similar to observations in Driver 1's route.
+
+<p align="center">
+  <img width="800" src="./figures/fiesta_route.png" />
+</p> 
+
+## Scatter plot
+
+### 2012 Honda Fit
+
+Regarding the clustering of Driver 1, it is noticeable that a significant portion of the clusters overlapped, likely due to the prevalence of data from the normal and aggressive driving profiles. Despite the relatively separate cluster centers, the flow's shape influenced by the route's specificities resulted in closely positioned groups. 
+
+<p align="center">
+  <img width="800" src="./figures/fit_clusters.png" />
+</p> 
+
+### 2014 Ford Fiesta
+
+On the other hand, for the second driver, the notable distance of Cluster 1 in comparison to the other two clusters stands out, most likely attributed to abrupt accelerations performed by the driver within short time intervals.
+
+<p align="center">
+  <img width="800" src="./figures/fiesta_clusters.png" />
+</p> 
+
+## Cluster Quality Metrics
+
+Additionally, several cluster quality metrics were evaluated, providing insights into the effectiveness of the clustering process.
+
+| Metric                  | Driver 1 |     |     | Driver 2 |     |
+|-------------------------|----------|-----|-----|----------|-----|
+| Silhouette Score        | 0.0137   |     |     | 0.1550   |     |
+| Davies-Bouldin Score    | 35.3533  |     |     | 9.2052   |     |
+| Calinski-Harabasz Score | 22.9093  |     |     | 13.6478  |     |
+| Dunn Index              | 0.0000   |     |     | 0.0002   |     |
+
+
 ## :page_facing_up: License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
